@@ -1,0 +1,49 @@
+package mist.api.ui;
+
+import org.json.JSONObject;
+
+import java.io.File;
+
+/**
+ * Created by jeppe on 11/21/16.
+ */
+
+public class Ui {
+
+    private File logo = null;
+    private String md5 = null;
+    private String name = null;
+    private JSONObject info = null;
+
+    public File getLogo() {
+        return logo;
+    }
+
+    void setLogo(File logo) {
+        this.logo = logo;
+    }
+
+    public String getMd5() {
+        return md5;
+    }
+
+    void setMd5(String md5) {
+        this.md5 = md5;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    void setName(String name) {
+        this.name = name;
+    }
+
+    public JSONObject getInfo() {
+        return info;
+    }
+
+    void setInfo(JSONObject info) {
+        this.info = info;
+    }
+}

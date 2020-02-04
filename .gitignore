@@ -1,0 +1,14 @@
+*.iml
+/.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+*.swp
+
+MistApi/src/main/obj
+MistApi/src/main/libs/
+
+
