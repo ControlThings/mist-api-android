@@ -2,6 +2,23 @@
 
 This repository contains the Mist Api library for Android.
 
+## Build
+
+### Before building
+
+Get git submodules
+
+```
+git submodule update --init --recursive
+```
+
+You will need to point to Android SDK and NDK in a `local.properties`, like this:
+
+```  
+ndk.dir=/home/jan/Android/Sdk/ndk/16.1.4479499
+sdk.dir=/home/jan/Android/Sdk
+```
+
 ## Build information
 
 1. Change libraryVersion in build.gradle(Module: MistApi)
