@@ -20,7 +20,8 @@ buildscript {
 allprojects {
     repositories {
        // mavenLocal()
-        maven {
+     /*   maven {
+          name = "GitHubPackages"
            // url "http://foremost.cto.fi:8081/artifactory/libs-release-local"
             url = uri("https://maven.pkg.github.com/25156296/mist-api-android")
             credentials {
@@ -29,7 +30,7 @@ allprojects {
                 username = githubProperties['gpr.usr'] ?: System.getenv("GPR_USER")
                 password = githubProperties['gpr.key'] ?: System.getenv("GPR_API_KEY")
             }
-        }
+        } */
         jcenter()
         google()
     }
