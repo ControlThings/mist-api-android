@@ -21,11 +21,15 @@ sdk.dir=/home/jan/Android/Sdk
 
 ## Build information
 
-1. Change libraryVersion in build.gradle(Module: MistApi)
+Build only the MistApi module, since the 'app' module has some test code that does not seem to be up to date.
 
-2. The following will build a release and push it to artifactory
+./gradlew :MistApi:assembleRelease
 
-$ ./gradlew --refresh-dependencies clean assembleRelease artifactoryPublish
+### clean build
+
+Note: this attempts to build all modules.
+
+$ ./gradlew --refresh-dependencies clean assembleRelease 
 
 ## Debugging the native code
 
