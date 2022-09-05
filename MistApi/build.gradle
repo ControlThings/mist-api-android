@@ -35,7 +35,7 @@ def getGitClean = { ->
 
 def libraryGroupId = 'fi.ct.mist'
 def libraryArtifactId = 'mistapi' //archivesBaseName
-def libraryVersion = '0.8.10'
+def libraryVersion = getGitVersion()
 
 android {
     compileSdkVersion 28
@@ -79,7 +79,7 @@ dependencies {
     implementation 'org.mongodb:bson:3.6.0'
     implementation 'org.apache.commons:commons-compress:1.12'
     implementation 'com.squareup.okio:okio:1.15.0'
-    implementation 'fi.ct.wish:wishcore:0.6.2'
+    implementation 'fi.ct.wish:wishcore:0.9.1'
 }
 
 publishing {
