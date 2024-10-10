@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
-apply plugin: 'com.jfrog.artifactory'
 
 def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("github.properties"))) //Set env variable GPR_USER & GPR_API_KEY if not adding a properties file
@@ -79,7 +78,7 @@ dependencies {
     implementation 'org.mongodb:bson:3.6.0'
     implementation 'org.apache.commons:commons-compress:1.12'
     implementation 'com.squareup.okio:okio:1.15.0'
-    implementation 'fi.ct.wish:wishcore:0.9.1'
+    implementation 'fi.ct.wish:wishcore:0.9.3'
 }
 
 publishing {
